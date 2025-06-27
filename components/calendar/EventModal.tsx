@@ -77,7 +77,7 @@ export default function EventModal({
       >
         <div className="bg-white p-6 rounded-lg shadow-xl w-96 max-h-[80vh] overflow-y-auto">
           <h2 className="text-lg font-bold mb-4">
-            {format(date, 'yyyy年MM月dd日')}
+            {format(date, 'yyyy.MM.dd')}
           </h2>
 
           {/* 予定一覧 */}
