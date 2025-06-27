@@ -32,7 +32,6 @@ npm run dev
 npm run build
 npm start
 
-Translated with DeepL.com (free version)
 ```
 
 Go to http://localhost:3000 for access.
