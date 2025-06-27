@@ -6,10 +6,12 @@ const mPlusRounded1c = M_PLUS_Rounded_1c({
   weight: ['400', '500', '700'],
   display: 'swap',
 });
-
+// app/page.tsx など
 export const metadata = {
-  title: 'My Calendar',
-  description: 'Next.js calendar SaaS',
+  title:
+    'Google Calendar Style App - Next.js × Tailwind × Framer Motion Tutorial by Arton',
+  description:
+    'Built with Next.js, Tailwind CSS, and Framer Motion. Add, edit, and delete schedules with smooth animations and local storage support. Perfect for learning modern React and UI animation. Created by Arton.',
 };
 
 export default function RootLayout({

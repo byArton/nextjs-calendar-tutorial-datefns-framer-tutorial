@@ -121,3 +121,10 @@ export default function CalendarPage() {
     </motion.div>
   );
 }
+// app/page.tsx など
+export const metadata = {
+  title:
+    'Google Calendar Style App - Next.js × Tailwind × Framer Motion Tutorial by Arton',
+  description:
+    'Built with Next.js, Tailwind CSS, and Framer Motion. Add, edit, and delete schedules with smooth animations and local storage support. Perfect for learning modern React and UI animation. Created by Arton.',
+};
