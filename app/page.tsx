@@ -81,7 +81,7 @@ export default function CalendarPage() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.1, duration: 0.3 }}
               >
-                月間カレンダー
+                Month
               </motion.h2>
             </div>
             <div className="flex-1 flex flex-col justify-center">

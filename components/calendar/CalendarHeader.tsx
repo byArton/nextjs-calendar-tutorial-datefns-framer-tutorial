@@ -18,19 +18,19 @@ export default function CalendarHeader({
         <button
           onClick={() => setCurrentMonth(subMonths(currentMonth, 1))}
           className="p-2 rounded hover:bg-gray-100"
-          aria-label="前月"
+          aria-label="prev"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor">
             <polyline points="15 18 9 12 15 6" strokeWidth="2" />
           </svg>
         </button>
         <div className="text-xl font-semibold">
-          {format(currentMonth, 'yyyy年 M月', { locale: ja })}
+          {format(currentMonth, 'yyyy.M', { locale: ja })}
         </div>
         <button
           onClick={() => setCurrentMonth(addMonths(currentMonth, 1))}
           className="p-2 rounded hover:bg-gray-100"
-          aria-label="次月"
+          aria-label="next"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor">
             <polyline points="9 6 15 12 9 18" strokeWidth="2" />
@@ -39,7 +39,7 @@ export default function CalendarHeader({
       </div>
       <div>
         <span className="text-sm text-gray-500">
-          {format(new Date(), 'yyyy/MM/dd (E)', { locale: ja })}
+          {format(new Date(), 'yyyy/MM/dd', { locale: ja })}
         </span>
       </div>
     </header>

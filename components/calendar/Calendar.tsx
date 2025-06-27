@@ -100,7 +100,7 @@ export default function Calendar({
     <table className="w-full h-full table-fixed border-separate border-spacing-y-1 select-none">
       <thead>
         <tr>
-          {['日', '月', '火', '水', '木', '金', '土'].map((d, i) => (
+          {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map((d, i) => (
             <th
               key={i}
               className="pb-2 font-semibold text-gray-600 text-center"

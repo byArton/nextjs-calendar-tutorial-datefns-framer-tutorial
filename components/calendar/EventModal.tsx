@@ -82,9 +82,9 @@ export default function EventModal({
 
           {/* 予定一覧 */}
           <div className="mb-4">
-            <h3 className="text-md font-semibold mb-2">予定一覧</h3>
+            <h3 className="text-md font-semibold mb-2">Schedule</h3>
             {dayEvents.length === 0 ? (
-              <div className="text-gray-400 text-sm mb-2">予定はありません</div>
+              <div className="text-gray-400 text-sm mb-2">No Schedules</div>
             ) : (
               <ul className="space-y-2">
                 {dayEvents.map((ev) => (
@@ -95,13 +95,13 @@ export default function EventModal({
                           className="border rounded w-full p-2 text-sm"
                           value={editTitle}
                           onChange={(e) => setEditTitle(e.target.value)}
-                          placeholder="タイトル"
+                          placeholder="title"
                         />
                         <textarea
                           className="border rounded w-full p-2 text-sm resize-none"
                           value={editDescription}
                           onChange={(e) => setEditDescription(e.target.value)}
-                          placeholder="詳細"
+                          placeholder="detail"
                           rows={2}
                         />
                         <div className="flex gap-2 justify-end">
@@ -116,13 +116,13 @@ export default function EventModal({
                               setEditId(null);
                             }}
                           >
-                            保存
+                            Save
                           </button>
                           <button
                             className="px-3 py-1 text-sm bg-gray-300 text-gray-700 rounded hover:bg-gray-400"
                             onClick={() => setEditId(null)}
                           >
-                            キャンセル
+                            Cancel
                           </button>
                         </div>
                       </div>
@@ -142,13 +142,13 @@ export default function EventModal({
                               className="px-2 py-1 text-xs text-blue-600 hover:bg-blue-50 rounded"
                               onClick={() => setEditId(ev.id)}
                             >
-                              編集
+                              Edit
                             </button>
                             <button
                               className="px-2 py-1 text-xs text-red-600 hover:bg-red-50 rounded"
                               onClick={() => onDelete(ev.id)}
                             >
-                              削除
+                              Delete
                             </button>
                           </div>
                         </div>
@@ -162,7 +162,7 @@ export default function EventModal({
 
           {/* 新規追加フォーム */}
           <div className="border-t pt-4">
-            <h3 className="text-md font-semibold mb-2">新しい予定</h3>
+            <h3 className="text-md font-semibold mb-2">New Schedule</h3>
             <form
               onSubmit={(e) => {
                 e.preventDefault();
@@ -183,13 +183,13 @@ export default function EventModal({
             >
               <input
                 className="border rounded w-full p-2 text-sm"
-                placeholder="タイトル"
+                placeholder="title"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               />
               <textarea
                 className="border rounded w-full p-2 text-sm resize-none"
-                placeholder="詳細"
+                placeholder="detail"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 rows={3}
@@ -200,14 +200,14 @@ export default function EventModal({
                   className="px-4 py-2 rounded bg-gray-200 hover:bg-gray-300"
                   onClick={onClose}
                 >
-                  閉じる
+                  Close
                 </button>
                 <button
                   type="submit"
                   className="px-4 py-2 rounded bg-orange-500 text-white hover:bg-orange-600 disabled:bg-gray-300"
                   disabled={!title.trim()}
                 >
-                  追加
+                  Add
                 </button>
               </div>
             </form>
