@@ -35,14 +35,6 @@ export default function Sidebar() {
           </ul>
         </nav>
       </div>
-      <div className="p-4">
-        <button
-          className="w-full py-2 px-4 rounded-lg text-white font-bold transition"
-          style={{ color: COLORS.white, background: COLORS.primary }}
-        >
-          + 新しい予定
-        </button>
-      </div>
     </aside>
   );
 }
