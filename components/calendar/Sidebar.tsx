@@ -29,7 +29,7 @@ export default function Sidebar() {
                 >
                   <circle cx="12" cy="12" r="10" strokeWidth="2" />
                 </svg>
-                カレンダー
+                Me
               </a>
             </li>
           </ul>
