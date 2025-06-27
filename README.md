@@ -2,6 +2,9 @@
 
 This is a Calendar/Schedule application. Implemented with Next.js 15, Tailwind CSS, and Framer Motion, it supports creating, editing, deleting, and local saving of appointments.
 
+DEMO
+https://nextjs-calendar-tutorial-datefns-framer-tutorial-g4jtbh7ca.vercel.app/
+
 ## 🚀 Key Features.
 
 - **Google Calendar-like UI**: Sophisticated design for both PC and smartphones
